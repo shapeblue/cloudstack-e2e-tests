@@ -29,7 +29,7 @@ test.describe('CloudStack Login', () => {
     // Click login button
     await page.click('button[type="submit"]');
     
-    // Wait for dashboard to load (adjust selector based on your CloudStack UI)
+    // Wait for dashboard to load (selector will be adjusted)
     await expect(page).toHaveURL(/.*dashboard.*/);
     
     // Verify user is logged in (check for logout button or user menu)
@@ -44,7 +44,7 @@ test.describe('CloudStack Login', () => {
     await page.fill('input[name="password"]', 'wrong_password');
     await page.click('button[type="submit"]');
     
-    // Check for error message (adjust selector based on your UI)
+    // Check for error message (selector will be adjusted)
     // await expect(page.locator('.error-message')).toBeVisible();
   });
   
