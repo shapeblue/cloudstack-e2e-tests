@@ -1,8 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 /**
- * Sample test: CloudStack UI Login
- * This is a basic example - customize for your CloudStack instance
+ * CloudStack UI Login Tests
  */
 test.describe('CloudStack Login', () => {
   
