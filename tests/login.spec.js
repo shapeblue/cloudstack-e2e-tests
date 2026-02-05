@@ -19,7 +19,7 @@ test.describe('CloudStack Login', () => {
     // Navigate to CloudStack UI
     await page.goto('/client');
     
-    // Fill in credentials (use environment variables for real tests)
+    // Fill in credentials (env vars will be used on real tests)
     await page.fill('input[name="username"]', process.env.CS_USERNAME || 'admin');
     await page.fill('input[name="password"]', process.env.CS_PASSWORD || 'password');
     
