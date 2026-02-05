@@ -1,0 +1,27 @@
+{
+  "name": "cloudstack-e2e-tests",
+  "version": "1.0.0",
+  "description": "End-to-end UI tests for Apache CloudStack",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:chromium": "playwright test --project=chromium",
+    "report": "playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "cloudstack",
+    "e2e",
+    "testing"
+  ],
+  "author": "ShapeBlue",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@playwright/test": "^1.48.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
